@@ -1,0 +1,87 @@
+/* Boxmodell: enklare hantering */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Allmänna stilar */
+body {
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+    width: 80%;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Rubriker */
+h1 {
+    font-size: 3em;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Om Mig */
+#omMig p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+#omMig span {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Projekt / Intressen */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li.projekt-item {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li.projekt-item:hover {
+    background-color: #d6eaf8;
+}
+
+/* Bilden */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Kontaktlänkar */
+a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #5e3370;
+}

@@ -1,0 +1,71 @@
+/* Bakgrundsfärg för hela sidan */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrera rubriker */
+h1, h2 {
+    text-align: center;
+}
+
+/* Ändra färg på h1-rubrik */
+h1 {
+    color: darkgreen;
+}
+
+/* Marginaler och padding för listor */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 0;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Radavstånd för listobjekt */
+li {
+    line-height: 1.5;
+}
+
+/* Länkstil */
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox för ingredienser och bild */
+.ingredienser-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ingredienser-container img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsiv layout: bilden under ingredienser på små skärmar */
+@media (max-width: 600px) {
+    .ingredienser-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ingredienser-container img {
+        max-width: 100%;
+    }
+}
+
+/* Extra styling för p-element */
+p {
+    text-align: center;
+    font-size: 1.1em;
+}
